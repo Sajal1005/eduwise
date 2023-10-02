@@ -34,6 +34,7 @@ export const NavigationItem = ({
         onClick={onClick}
         className="group relative flex items-center"
       >
+        {/* For changing white sidebar length against servers/classrooms */}
         <div className={cn(
           "absolute left-0 bg-primary rounded-r-full transition-all w-[4px]",
           params?.serverId !== id && "group-hover:h-[20px]",
