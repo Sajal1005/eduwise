@@ -34,10 +34,12 @@ const InviteCodePage = async ({
     }
   });
 
+  // If already in server, then return back to server
   if (existingServer) {
     return redirect(`/servers/${existingServer.id}`);
   }
 
+  // else add to server
   const server = await db.server.update({
     where: {
       inviteCode: params.inviteCode,

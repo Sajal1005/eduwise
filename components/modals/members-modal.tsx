@@ -143,7 +143,7 @@ export const MembersModal = () => {
                               onClick={() => onRoleChange(member.id, "GUEST")}
                             >
                               <Shield className="h-4 w-4 mr-2" />
-                              Guest
+                              Student
                               {member.role === "GUEST" && (
                                 <Check
                                   className="h-4 w-4 ml-auto"
