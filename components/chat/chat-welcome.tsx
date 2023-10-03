@@ -20,12 +20,19 @@ export const ChatWelcome = ({
         {type === "channel" ? "🚀 Step into the Exciting World of " : ""}{name}
       </p>
       <p className="text-zinc-600 dark:text-zinc-400 text-sm">
-        {type === "channel"
-          ? `🌟 Get ready to embark on a journey in the ${name} channel! <br/>
-          📣 Make waves with your announcements and notifications.<br/>
-          📁 Share your assignments with a flourish by sending PDFs and captivating images!`
-          : `This is the start of your conversation with ${name}`
-        }
+      {
+  type === "channel" ? (
+    <div className="text-lg mt-4">
+      🌟 Get ready to embark on a journey in the {name} channel!
+      <br />
+      📣 Make waves with your announcements and notifications.
+      <br />
+      📁 Share your assignments with a flourish by sending PDFs and captivating images!
+    </div>
+  ) : (
+    `This is the start of your conversation with ${name}`
+  )
+}
       </p>
     </div>
   )
