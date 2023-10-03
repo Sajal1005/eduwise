@@ -1,16 +1,25 @@
+import Link from 'next/link';
 import { redirect } from "next/navigation";
 import { UserButton } from "@clerk/nextjs";
 
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Separator } from "@/components/ui/separator";
+import { Button } from "../ui/button";
 import { currentProfile } from "@/lib/current-profile"
 import { db } from "@/lib/db";
 
 import { NavigationAction } from "./navigation-action";
 import { NavigationItem } from "./navigation-item";
+import { LayoutDashboard } from "lucide-react";
+
 
 export const NavigationSidebar = async () => {
+
+  function goToDashboard(){
+    redirect("/dashboard")
+  }
+
   const profile = await currentProfile();
 
   if (!profile) {
@@ -47,6 +56,12 @@ export const NavigationSidebar = async () => {
         ))}
       </ScrollArea>
       <div className="pb-3 mt-auto flex items-center flex-col gap-y-4">
+        {/* DashBoard Button */}
+        <Link href="/dashboard">
+          <Button variant={"primary"} >
+            <LayoutDashboard/>
+          </Button>
+        </Link>
         <ModeToggle />
         <UserButton
           afterSignOutUrl="/"
