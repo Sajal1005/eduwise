@@ -16,10 +16,6 @@ import { LayoutDashboard } from "lucide-react";
 
 export const NavigationSidebar = async () => {
 
-  function goToDashboard(){
-    redirect("/dashboard")
-  }
-
   const profile = await currentProfile();
 
   if (!profile) {
