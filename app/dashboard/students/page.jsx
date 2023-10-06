@@ -6,8 +6,12 @@ import {RxDashboard, RxPerson} from 'react-icons/rx'
 import {AiOutlineHome} from 'react-icons/ai'
 import {PiNotepad} from 'react-icons/pi'
 import {FiSettings} from 'react-icons/fi'
+import { currentProfile } from "@/lib/current-profile";
 
-const students = () => {
+
+async function students(){
+    const profile = await currentProfile();
+
   return (
     <div className='flex text-black'>
         <div className='fixed w-20 h-screen p-4 bg-white border-r-[1px] flex flex-col justify-between'>
@@ -40,7 +44,7 @@ const students = () => {
       <div className='bg-gray-100 min-h-screen'>
         <div className='flex justify-between p-4'>
             <h2>Student List</h2>
-            <h2>Welcome back, User</h2>
+            <h2>Welcome back, {profile.name}</h2>
         </div>
         <div className='p-4'>
             <div className='w-full m-auto p-4 border rounded-lg bg-white overflow-y-auto'>

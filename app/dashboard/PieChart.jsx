@@ -4,6 +4,9 @@ import React, {useState, useEffect}from 'react'
 import { Pie } from 'react-chartjs-2';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 ChartJS.register(ArcElement, Tooltip, Legend);
+import {Chart} from 'chart.js'
+import ChartDataLabels from 'chartjs-plugin-datalabels';
+Chart.register(ChartDataLabels);
 
 const PieChart = () => {
     const [chartData, setChartData] = useState({
@@ -33,6 +36,13 @@ const PieChart = () => {
                         'rgba(75, 192, 192, 0.2)',
                         'rgba(153, 102, 255, 0.2)',
                       ],
+                      datalabels: {
+                        color: ['rgba(255, 99, 132, 3)',
+                        'rgba(54, 162, 235, 3)',
+                        'rgba(255, 206, 86, 3)',
+                        'rgba(75, 192, 192, 3)',
+                        'rgba(153, 102, 255, 3)']
+                      }
                 },
             ]
         })
@@ -44,6 +54,13 @@ const PieChart = () => {
                 title: {
                     display: true,
                     text: 'Marks'
+                },
+                datalabels: { // This code is used to display data values
+                    font: {
+                        fontStyle: "bold",
+                        weight: 600,
+                        size: 26
+                    }
                 }
             },
             maintainAspectRatio: false,

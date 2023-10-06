@@ -11,8 +11,8 @@ export const studentdata = [
     {
         id:2,
         name: {
-            first: 'gebeg',
-            last: 'dd'
+            first: 'Sajal',
+            last: 'Nanda'
         },
         attendance: 60,
         marks: 75

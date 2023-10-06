@@ -8,8 +8,10 @@ import {RxDashboard, RxPerson} from 'react-icons/rx'
 import {AiOutlineHome} from 'react-icons/ai'
 import {PiNotepad} from 'react-icons/pi'
 import {FiSettings} from 'react-icons/fi'
+import { currentProfile } from "@/lib/current-profile";
 
-function DashBoard() {
+async function DashBoard() {
+    const profile = await currentProfile();
   return (
     <>
     <div className='flex'>
@@ -34,11 +36,6 @@ function DashBoard() {
                 <Link href='/dashboard/students'>
                     <div className='bg-gray-100 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block text-black'>
                         <PiNotepad size={20}/>
-                    </div>
-                </Link>
-                <Link href='/dashboard'>
-                    <div className='bg-gray-100 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block text-black'>
-                        <FiSettings size={20}/>
                     </div>
                 </Link>
             </div>
