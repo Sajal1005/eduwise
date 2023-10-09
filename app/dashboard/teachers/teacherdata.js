@@ -2,37 +2,56 @@ export const teacherdata = [
     {
         Tid: 1,
         name: {
-            first: 'Sahil',
-            last: 'Kumar'
+            first: 'Pranay',
+            last: 'Kaushik'
         },
         subject: 'FEE',
-        email: 'sahil123@gmail'
+        email: 'pranay1039@gmail'
     },
     {
-        Tid: 2,
+        Tid: 5,
         name: {
-            first: 'qwre',
-            last: 'rff'
+            first: 'Elena',
+            last: 'Gomez'
         },
-        subject: 'Nalr',
-        email: 'ssden23@gmail'
+        subject: 'Math',
+        email: 'elena.math@gmail'
     },
     {
-        Tid: 3,
+        Tid: 6,
         name: {
-            first: 'jxnwj',
-            last: 'cemk'
+            first: 'Robert',
+            last: 'Johnson'
         },
-        subject: 'PA',
-        email: 'jncej@gmail'
+        subject: 'Science',
+        email: 'robert.science@gmail'
     },
     {
-        Tid: 4,
+        Tid: 7,
         name: {
-            first: 'denjcek',
-            last: 'NDWK'
+            first: 'Sophia',
+            last: 'Anderson'
         },
-        subject: 'Ves',
-        email: 'nneje@gmail'
+        subject: 'History',
+        email: 'sophia.history@gmail'
+    },
+    {
+        Tid: 8,
+        name: {
+            first: 'William',
+            last: 'Taylor'
+        },
+        subject: 'English',
+        email: 'william.english@gmail'
+    },
+    {
+        Tid: 9,
+        name: {
+            first: 'Olivia',
+            last: 'Martin'
+        },
+        subject: 'Physics',
+        email: 'olivia.physics@gmail'
     }
+    
 ]

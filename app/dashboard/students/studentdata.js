@@ -1,93 +1,49 @@
 export const studentdata = [
     {
-        id:1,
+        id: 11,
         name: {
             first: 'Sahil',
             last: 'Kumar'
         },
-        attendance: 90,
-        marks: 95
+        attendance: 75,
+        marks: 80
     },
     {
-        id:2,
+        id: 12,
         name: {
             first: 'Sajal',
             last: 'Nanda'
         },
-        attendance: 60,
-        marks: 75
-    },
-    {
-        id:3,
-        name: {
-            first: 'vfr',
-            last: 'qwe'
-        },
-        attendance: 90,
-        marks: 65
-    },
-    {
-        id:4,
-        name: {
-            first: 'hhed',
-            last: 'acwdf'
-        },
-        attendance: 40,
-        marks: 75
-    },
-    {
-        id:5,
-        name: {
-            first: 'ewfr',
-            last: 'gbgb'
-        },
-        attendance: 95,
-        marks: 35
-    },
-    {
-        id:6,
-        name: {
-            first: 'vvr',
-            last: 'qde'
-        },
-        attendance: 96,
+        attendance: 85,
         marks: 92
     },
     {
-        id:7,
+        id: 13,
         name: {
-            first: 'w43',
-            last: 'wqwde'
+            first: 'Pranay',
+            last: 'Kaushik'
         },
-        attendance: 40,
-        marks: 55
+        attendance: 70,
+        marks: 78
     },
     {
-        id:8,
+        id: 14,
         name: {
-            first: 'r44',
-            last: 'verw'
+            first: 'SM',
+            last: 'Sharan'
         },
-        attendance: 60,
+        attendance: 92,
+        marks: 88
+    },
+    {
+        id: 15,
+        name: {
+            first: 'Harshit',
+            last: 'Chadha'
+        },
+        attendance: 88,
         marks: 75
-    },
-    {
-        id:9,
-        name: {
-            first: 'rvww',
-            last: 'vrwe'
-        },
-        attendance: 80,
-        marks: 85
-    },
-    {
-        id:10,
-        name: {
-            first: 'crefvr',
-            last: 'rvr'
-        },
-        attendance: 66,
-        marks: 77
-    },
+    }
+    
 
 ];
